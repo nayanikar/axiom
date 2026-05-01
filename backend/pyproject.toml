@@ -1,0 +1,24 @@
+[project]
+name = "axiom-backend"
+version = "0.3.0"
+description = "FastAPI backend for Axiom — Anthropic teachers, Spacebase1 Intent Space, SQLite graph."
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "httpx>=0.27",
+    "sqlalchemy>=2.0",
+    "aiosqlite>=0.20",
+    "greenlet>=3.0",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.5",
+    "python-dotenv>=1.0",
+    "requests>=2.32",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "app.services", "app.routers"]

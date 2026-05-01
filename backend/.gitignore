@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+swarmlearn.db
+swarmlearn.db-journal
+swarmlearn.db-wal
+swarmlearn.db-shm
+spacebase_workspace/
